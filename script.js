@@ -106,6 +106,7 @@ document.getElementById('menu-dots').addEventListener("click", function () {
     if(!mobContactStatus) {
         document.getElementById('mob-contact').style.opacity = '1';
         document.getElementById('mob-contact').style.top = '55px';
+        document.getElementById('menu-dots').style.transform = 'rotateX(180deg)';
 
         mobContactStatus = true;
     }
@@ -114,6 +115,7 @@ document.getElementById('menu-dots').addEventListener("click", function () {
 
         document.getElementById('mob-contact').style.opacity = '0';
         document.getElementById('mob-contact').style.top = '40px';
+        document.getElementById('menu-dots').style.transform = 'rotateX(0deg)';
 
         mobContactStatus = false;
     }
